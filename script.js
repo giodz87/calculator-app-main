@@ -5,6 +5,7 @@ const deleteNumber = document.getElementById("delete-num");
 const resetBtn = document.getElementById("reset");
 const equalBtn = document.getElementById("equal");
 const rangeMove = document.getElementById("range");
+const dynamic = document.getElementById("dynamic-stylesheet");
 
 let btnArr = "";
 let regex = "";
@@ -38,10 +39,22 @@ rangeMove.addEventListener("click", () => {
   rangeSize = rangeMove.value;
 
   if (rangeSize === "0") {
-    document.getElementById("stylesheet").href = "styles.css";
+    let link1 = document.createElement("link");
+    link1.rel = "stylesheet";
+    link1.href = "styles.css";
+    dynamic.appendChild(link1);
+    // document.getElementById("stylesheet").href = "styles.css";
   } else if (rangeSize === "1") {
-    document.getElementById("stylesheet").href = "white.css";
+    const link2 = document.createElement("link");
+    link2.rel = "stylesheet";
+    link2.href = "white.css";
+    dynamic.appendChild(link2);
+    // document.getElementById("stylesheet").href = "white.css";
   } else if (rangeSize === "2") {
-    document.getElementById("stylesheet").href = "dark.css";
+    let link3 = document.createElement("link");
+    link3.rel = "stylesheet";
+    link3.href = "dark.css";
+    dynamic.appendChild(link3);
+    // document.getElementById("stylesheet").href = "dark.css";
   }
 });

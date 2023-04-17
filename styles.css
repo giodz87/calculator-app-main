@@ -164,6 +164,7 @@ section {
   width: 60px;
   height: 64px;
   border: none;
+  cursor: pointer;
 }
 .del:hover {
   background: #a2b2e1;
@@ -182,6 +183,7 @@ section {
   letter-spacing: -0.533333px;
   color: #434a59;
   border: none;
+  cursor: pointer;
 }
 .btn:hover {
   background: #fffffe;
@@ -205,6 +207,7 @@ section {
   justify-content: center;
   color: #ffffff;
   border: none;
+  cursor: pointer;
 }
 .btn-reset:hover {
   background: #a2b2e1;
@@ -228,6 +231,7 @@ section {
   letter-spacing: -0.333333px;
   color: #ffffff;
   border: none;
+  cursor: pointer;
 }
 .btn-equal:hover {
   background: #f96b5b;
